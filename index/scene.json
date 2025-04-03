@@ -1,0 +1,220 @@
+{
+    "type": "scene",
+    "properties": {
+      "baseExtent": {
+        "cx": 578565.1212265114,
+        "cy": 1660740.167850031,
+        "width": 2366.3492860412225,
+        "height": 2366.3492860412225,
+        "rotation": 0
+      },
+      "origin": {
+        "x": 578565.1212265114,
+        "y": 1660740.167850031,
+        "z": 0.0
+      },
+      "zScale": 1.85,
+      "light": "directional"
+    },
+    "layers": [
+      {
+        "type": "layer",
+        "id": 0,
+        "properties": {
+          "name": "valvulas",
+          "clickable": true,
+          "visible": true,
+          "type": "polygon",
+          "objType": "Polygon",
+          "propertyNames": [
+            "Name",
+            "description",
+            "timestamp",
+            "begin",
+            "end",
+            "altitudeMode",
+            "tessellate",
+            "extrude",
+            "visibility",
+            "drawOrder",
+            "icon",
+            "area",
+            "elevation_avg",
+            "orientation",
+            "plant_count",
+            "id",
+            "type",
+            "plant_density",
+            "steepness_avg",
+            "system_index",
+            "steepness_max"
+          ],
+          "label": {
+            "relative": true,
+            "font": "sans-serif",
+            "size": -3,
+            "color": "rgb(0,0,0)",
+            "olcolor": "rgb(255,255,255)",
+            "bgcolor": "rgba(255,255,255,0.69)",
+            "cncolor": 12632272
+          }
+        },
+        "data": {
+          "materials": [
+            {
+              "type": 0,
+              "c": 12011595,
+              "flat": 1,
+              "ds": 1
+            }
+          ],
+          "blocks": [
+            {
+              "url": "./data/index/a0.json",
+              "featureCount": 46
+            }
+          ]
+        }
+      },
+      {
+        "type": "layer",
+        "id": 2,
+        "properties": {
+          "name": "pendiente",
+          "clickable": true,
+          "visible": true,
+          "type": "polygon",
+          "objType": "Polygon",
+          "label": {
+            "relative": true,
+            "font": "sans-serif",
+            "size": -2,
+            "color": "rgb(0,0,0)",
+            "olcolor": "rgb(255,255,255)",
+            "bgcolor": "rgba(255,255,255,0.69)",
+            "cncolor": 12632272
+          }
+        },
+        "data": {
+          "materials": [
+            {
+              "type": 0,
+              "c": 12860473,
+              "flat": 1,
+              "ds": 1
+            }
+          ],
+          "blocks": [
+            {
+              "url": "./data/index/b0.json",
+              "featureCount": 46
+            }
+          ]
+        }
+      },
+      {
+        "type": "layer",
+        "id": 3,
+        "properties": {
+          "name": "perfil_suelos_menos_400m",
+          "clickable": true,
+          "visible": true,
+          "type": "dem",
+          "clipped": false,
+          "mtlNames": [
+            "map (canvas)"
+          ],
+          "mtlIdx": 0
+        },
+        "data": [
+          {
+            "type": "block",
+            "layer": 3,
+            "block": 0,
+            "materials": [
+              {
+                "type": 0,
+                "image": {
+                  "url": "./data/index/c0.png"
+                },
+                "ds": 1,
+                "mtlIndex": 0,
+                "useNow": true
+              }
+            ]
+          },
+          {
+            "type": "block",
+            "layer": 3,
+            "block": 0,
+            "width": 2366.3492860412225,
+            "height": 2366.3492860412225,
+            "translate": [
+              0.0,
+              0.0,
+              0
+            ],
+            "zScale": 1.85,
+            "grid": {
+              "width": 201,
+              "height": 201,
+              "url": "./data/index/c0.bin"
+            }
+          }
+        ]
+      },
+      {
+        "type": "layer",
+        "id": 4,
+        "properties": {
+          "name": "elevacion_menos_400m",
+          "clickable": true,
+          "visible": true,
+          "type": "dem",
+          "clipped": false,
+          "mtlNames": [
+            "map (canvas)"
+          ],
+          "mtlIdx": 0,
+          "debug": true,
+          "objType": "DEM"
+        },
+        "data": [
+          {
+            "type": "block",
+            "layer": 4,
+            "block": 0,
+            "materials": [
+              {
+                "type": 0,
+                "image": {
+                  "url": "./data/index/d0.png"
+                },
+                "ds": 1,
+                "mtlIndex": 0,
+                "useNow": true
+              }
+            ]
+          },
+          {
+            "type": "block",
+            "layer": 4,
+            "block": 0,
+            "width": 2366.3492860412225,
+            "height": 2366.3492860412225,
+            "translate": [
+              0.0,
+              0.0,
+              0
+            ],
+            "zScale": 1.85,
+            "grid": {
+              "width": 201,
+              "height": 201,
+              "url": "./data/index/d0.bin"
+            }
+          }
+        ]
+      }
+    ]
+  }
