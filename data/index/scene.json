@@ -215,6 +215,59 @@
             }
           }
         ]
+      },
+      {
+        "type": "layer",
+        "id": 5,
+        "properties": {
+          "name": "humedad_suelo",
+          "clickable": true,
+          "visible": true,
+          "type": "dem",
+          "clipped": false,
+          "mtlNames": [
+            "map (canvas)"
+          ],
+          "mtlIdx": 0,
+          "debug": true,
+          "objType": "DEM"
+        },
+        "data": [
+          {
+            "type": "block",
+            "layer": 5,
+            "block": 0,
+            "materials": [
+              {
+                "type": 0,
+                "image": {
+                  "url": "./data/index/e0.png"
+                },
+                "ds": 1,
+                "mtlIndex": 0,
+                "useNow": true
+              }
+            ]
+          },
+          {
+            "type": "block",
+            "layer": 5,
+            "block": 0,
+            "width": 2366.3492860412225,
+            "height": 2366.3492860412225,
+            "translate": [
+              0.0,
+              0.0,
+              0
+            ],
+            "zScale": 1.85,
+            "grid": {
+              "width": 201,
+              "height": 201,
+              "url": "./data/index/e0.bin"
+            }
+          }
+        ]
       }
     ]
   }
